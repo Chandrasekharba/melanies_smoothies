@@ -1,5 +1,6 @@
 # Import python packages.
 import streamlit as st
+from snowflake.snowpark.functions import col
 
 # Write directly to the app.
 #st.title(f"Example Streamlit App :balloon: {st.__version__}")
@@ -19,8 +20,7 @@ st.markdown("""
 - :memo: [Streamlit in Snowflake release notes](https://docs.snowflake.com/en/release-notes/streamlit-in-snowflake)
 """)
 
-import streamlit as st
-from snowflake.snowpark.functions import col
+
 
 #write directly to the app
 st.title(":cup_with_straw: Customize your Smoothie!")
