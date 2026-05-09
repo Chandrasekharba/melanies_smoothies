@@ -1,8 +1,11 @@
 # Import python packages.
 import streamlit as st
 from snowflake.snowpark.functions import col
-session = get_active_session()
+#session = get_active_session()
 #write directly to the app
+
+conn = st.connection("snowflake")
+session = conn.session()
 st.title(":cup_with_straw: Customize your Smoothie!")
 st.write(
     """Choose the fruits you want in your custom Smoothie!"""
