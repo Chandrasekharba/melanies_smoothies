@@ -20,7 +20,7 @@ st.markdown("""
 """)
 
 import streamlit as st
-from snowflake.snowpark.functions import col, when_matched
+from snowflake.snowpark.functions import col
 
 #write directly to the app
 st.title(":cup_with_straw: Customize your Smoothie!")
